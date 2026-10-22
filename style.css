@@ -1,0 +1,160 @@
+:root {
+  --bs-body-font-family: "Figtree", system-ui, sans-serif;
+  --bs-body-bg: #e6f7ea;  
+  --bs-body-color: #1f2d28; 
+  --rose: #d03670;        
+  --plum: #0f6b4a;        
+  --pink-card: #ffffff;    
+  --pink-line: #f7bcd4;     
+  --hover: #fff0f6;       
+}
+h1, h2, h3, h4, h5, .navbar-brand { font-family: "League Spartan", system-ui, sans-serif; }
+section { scroll-margin-top: 70px; }
+
+.navbar { background-color: var(--pink-card); border-bottom: 2px solid var(--pink-line); }
+.navbar-brand { color: var(--plum) !important; font-weight: 700; font-size: 24px; }
+.nav-link { color: var(--plum) !important; font-weight: 500; }
+.nav-link:hover { color: var(--rose) !important; }
+
+.kartu {
+  background-color: var(--pink-card);
+  border: 2px solid var(--pink-line);
+  border-radius: 18px;
+  padding: 24px;
+}
+.foto-profil {
+  width: 200px; height: 260px; object-fit: cover;
+  border-radius: 50%; border: 4px solid var(--pink-line);
+}
+.deskripsi { text-align: justify; }
+.judul-bagian { color: var(--plum); font-weight: 700; margin-bottom: 16px; }
+
+.btn-rose { background-color: var(--rose); color: #fff; border: 2px solid var(--rose); border-radius: 12px; font-weight: 600; }
+.btn-rose:hover, .btn-rose:active, .btn-rose:focus-visible { background-color: transparent; color: var(--rose); border-color: var(--rose); }
+
+.btn-outline-plum { background-color: var(--plum); color: #fff; border: 2px solid var(--plum); border-radius: 12px; font-weight: 600; }
+.btn-outline-plum:hover, .btn-outline-plum:active, .btn-outline-plum:focus-visible { background-color: transparent; color: var(--plum); border-color: var(--plum); }
+
+.badge-skill { background-color: #ffffff; border: 2px solid var(--pink-line); color: var(--plum); font-size: 15px; font-weight: 600; padding: 8px 14px; border-radius: 999px; }
+.progress { height: 12px; background-color: #fff; border: 1px solid var(--pink-line); }
+.progress-bar { background-color: var(--rose); }
+
+.proyek { background: #fff; border: 2px solid var(--pink-line); border-radius: 16px; transition: transform .2s, background-color .2s; height: 100%; }
+.proyek:hover { transform: translateY(-4px); background-color: var(--hover); }
+
+.table { --bs-table-bg: transparent; --bs-table-hover-bg: var(--hover); }
+footer { color: var(--bs-body-color); }
+
+.proyek.karya { padding: 0; overflow: hidden; }
+.karya img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5; 
+  object-fit: cover;
+}
+
+.karya img.rasio-asli { aspect-ratio: auto; object-fit: contain; background-color: #efefef; }  
+.karya img.rasio-4-3  { aspect-ratio: 4 / 3; }
+.karya img.rasio-1-1  { aspect-ratio: 1 / 1; }
+.karya img.rasio-16-9 { aspect-ratio: 16 / 9; }
+
+.ig-post {
+  max-width: 380px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #fff;
+  color: #262626;
+  border: 1px solid #dbdbdb;
+  border-radius: 12px;
+}
+.ig-head { display: flex; align-items: center; gap: 10px; padding: 10px 12px; }
+.ig-avatar {
+  width: 34px; height: 34px;
+  object-fit: cover;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--rose);  
+}
+.ig-user { font-size: 14px; font-weight: 600; line-height: 1.2; }
+.ig-sub  { font-size: 12px; color: #737373; line-height: 1.2; }
+.ig-titik { margin-left: auto; }
+.ig-titik svg { width: 20px; height: 20px; fill: currentColor; }
+
+.ig-media { position: relative; background-color: #efefef; }
+.ig-media img { aspect-ratio: 4 / 5; object-fit: cover; }  
+.ig-counter {
+  position: absolute; top: 10px; right: 10px; z-index: 3;
+  padding: 3px 10px;
+  background-color: rgba(0, 0, 0, .65);
+  color: #fff; font-size: 12px; font-weight: 600;
+  border-radius: 999px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon { filter: drop-shadow(0 0 3px rgba(0, 0, 0, .6)); }
+
+.ig-actions { position: relative; display: flex; align-items: center; padding: 10px 12px 4px; }
+.ig-actions svg {
+  width: 24px; height: 24px;
+  fill: none; stroke: currentColor; stroke-width: 2;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.ig-kiri { display: flex; gap: 14px; }
+.ig-kanan { margin-left: auto; }
+.ig-actions .carousel-indicators {
+  position: absolute; top: 50%; bottom: auto; left: 0; right: 0;
+  margin: 0; padding: 0;
+  transform: translateY(-30%);
+  pointer-events: none;
+}
+.ig-actions .carousel-indicators [data-bs-target] {
+  box-sizing: border-box; flex: 0 0 auto;
+  width: 6px; height: 6px; margin: 0 2px; padding: 0;
+  border: 0; border-radius: 50%;
+  background-color: #c7c7c7; opacity: 1;
+  pointer-events: auto;
+}
+.ig-actions .carousel-indicators .active { background-color: #0095f6; }
+
+.ig-teks { padding: 4px 12px 12px; font-size: 14px; line-height: 1.4; }
+.ig-suka { margin-bottom: 4px; font-weight: 600; }
+.ig-caption { margin: 0; white-space: pre-line; }   
+.ig-waktu { margin-top: 6px; color: #737373; font-size: 10px; letter-spacing: .2px; text-transform: uppercase; }
+
+.caption-box {
+  height: 100%;
+  margin: 0;
+  padding: 14px 16px;
+  background-color: #fff;
+  border: 2px solid var(--pink-line);
+  border-left: 6px solid var(--rose);
+  border-radius: 12px;
+}
+.caption-box p { margin-bottom: .75rem; white-space: pre-line; } 
+.caption-box footer { margin: 0; }
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #d8f5e1 0%, #eaf8ee 45%, #fde4ee 100%);
+  background-attachment: fixed;
+}
+
+.navbar { background-color: rgba(255, 255, 255, .92); }
+
+.kartu { box-shadow: 0 8px 24px rgba(208, 54, 112, .10); }
+
+#beranda.kartu { background: linear-gradient(135deg, #ffffff 0%, #fff0f6 100%); }
+
+#beranda h1 {
+  background: linear-gradient(90deg, var(--plum), var(--rose));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.foto-profil {
+  width: 220px;
+  height: 280px;
+  border: 4px solid #fff;                  
+  border-radius: 110px 110px 24px 24px;    
+  box-shadow: 0 0 0 3px var(--pink-line),  
+              0 10px 24px rgba(0, 0, 0, .10);  
+}
